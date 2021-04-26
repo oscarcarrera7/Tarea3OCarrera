@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea3OCarrera.ventanaDos">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="Blue" CornerRadius="0">
+                <Label Text="Semana 3 Sistema de Calificaciones" HorizontalTextAlignment="Center" TextColor="White" />
+            </Frame>
+
+            <Label x:Name="lblUser"/>
+
+            <Label>Primer Parcial</Label>
+            <Entry x:Name="txtSeguimiento1" Placeholder="Ingrese nota de seguimiento 1" Keyboard="Numeric"/>
+            <Entry x:Name="txtExamen1" Placeholder="Ingrese nota de examen 1" Keyboard="Numeric"/>
+
+            <Label>Segundo Parcial</Label>
+            <Entry x:Name="txtSeguimiento2" Placeholder="Ingrese nota de seguimiento 2" Keyboard="Numeric"/>
+            <Entry x:Name="txtExamen2" Placeholder="Ingrese nota de examen 2" Keyboard="Numeric"/>
+
+            <Label>Nota Primer Parcial</Label>
+            <Entry x:Name="txtParcial1" Placeholder="Nota parcial 1" IsReadOnly="True"/>
+            <Label>Nota Segundo Parcial</Label>
+            <Entry x:Name="txtParcial2" Placeholder="Nota parcial 2" IsReadOnly="True"/>
+            <Label>Nota Final</Label>
+            <Entry x:Name="txtNota" Placeholder="Nota Final" IsReadOnly="True"/>
+
+            <Button x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
